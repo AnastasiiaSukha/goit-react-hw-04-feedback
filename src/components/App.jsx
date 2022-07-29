@@ -5,7 +5,7 @@ import Statistics from "./Statistics/Statistics";
 import Section from "./Sections/Section";
 import Notification from "./Notification/Notification";
 
-class App extends React.Component {
+export class App extends React.Component {
   state = {
     good: 0,
     neutral: 0,
@@ -27,7 +27,6 @@ class App extends React.Component {
 
   }
    
-
 
   countPositiveFeedbackPercentage = () => {
 
@@ -66,5 +65,6 @@ class App extends React.Component {
   }
   
 }
-export default App;
+
+
   
