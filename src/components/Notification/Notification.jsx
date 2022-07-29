@@ -11,3 +11,5 @@ Notification.propTypes = {
 };
 
 export default Notification;
+
+console.log();
