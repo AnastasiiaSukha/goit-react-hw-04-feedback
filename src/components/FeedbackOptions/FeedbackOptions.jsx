@@ -3,12 +3,13 @@ import React from "react";
 import { ButtonsList, Button } from './FeedbackOptions.styled';
 
 
-const FeedbackOptions = ({options, onLeaveFeedback}) => {
+const FeedbackOptions = ({ options, onLeaveFeedback }) => {
+    const keys = Object.keys(options)
     return (
         <ButtonsList>
-            {options.map(option => (
-                <li key={option}>
-                    <Button type="button" onClick={() => onLeaveFeedback(option)} >{option}</Button>
+            {keys.map(key => (
+                <li key={key}>
+                    <Button type="button" onClick={() => onLeaveFeedback(key)} >{key}</Button>
                 </li>
             ))}
         </ButtonsList>
